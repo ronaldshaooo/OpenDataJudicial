@@ -1,0 +1,3 @@
+import update_judicial_data
+
+update_judicial_data.refresh()
