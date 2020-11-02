@@ -1,3 +1,4 @@
 import update_judicial_data
 
 update_judicial_data.refresh()
+update_judicial_data.copy_fincial_judgement()
