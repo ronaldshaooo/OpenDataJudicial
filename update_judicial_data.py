@@ -9,9 +9,11 @@ fincial_judgement_directory = 'fincial_judgement'
 
 def copy_fincial_judgement():
     for root, _dirs, files in os.walk(judicial_history_directory):
+        print('check {}'.format(root))
         for item in files:
             if '金' in item:
                 shutil.copy(os.sep.join([root, item]), fincial_judgement_directory)
+                print('copy {}'.format(item))
 
 def check_history(link):
     file_dir = link.replace('rar/','').replace('.rar','')
