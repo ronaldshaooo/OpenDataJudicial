@@ -36,6 +36,8 @@ def refresh():
 
     for item in soup.find_all('a', href=True):
         link = item['href']
+        if 'Delete-Infor.csv' in link:
+            continue
         check_history(link)
 
 
